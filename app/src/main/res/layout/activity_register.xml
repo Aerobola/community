@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_centerInParent="true"
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <EditText
+        android:id="@+id/firstname_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="16"
+        android:padding="@dimen/padding_et"
+        android:textSize="@dimen/edit_text"
+        android:hint="First name"
+        android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastname_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_et"
+            android:textSize="@dimen/edit_text"
+            android:layout_below="@+id/firstname_et"
+            android:layout_centerHorizontal="true"
+            android:ems="16"
+            android:hint="Last name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text"
+            android:layout_below="@+id/lastname_et"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_et"
+            android:ems="16"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text"
+            android:layout_below="@+id/email_et"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_et"
+            android:ems="16"
+            android:hint="Password"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/confirmPassword_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text"
+            android:layout_below="@+id/password_et"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_et"
+            android:ems="16"
+            android:hint="Confirm password"
+            android:inputType="textPassword" />
+
+
+        <LinearLayout
+            android:id="@+id/role_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmPassword_et"
+            android:padding="@dimen/padding_et"
+           android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you?"
+
+                android:textSize="@dimen/normal"
+                />
+            <Spinner
+                android:id="@+id/role_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_et"
+
+                android:prompt="@string/role_prompt"
+                android:entries="@array/role_entries"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_signup"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/role_container"
+            android:layout_centerHorizontal="true"
+
+
+            android:text="Register" />
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_below="@+id/bt_signup"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/editText"
+
+                android:text="Already registered?"
+                />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignEnd="@+id/editText"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/tv1"
+                android:textColor="@color/colorDarkgray"
+                android:text="Sign In"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "731835853514",
+    "firebase_url": "https://community-cbef9.firebaseio.com",
+    "project_id": "community-cbef9",
+    "storage_bucket": "community-cbef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731835853514:android:3c40fec304163d51",
+        "android_client_info": {
+          "package_name": "com.aerobola.apps.community"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731835853514-srkfcrup0so5esn42vdfc180flvdc9dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aerobola.apps.community",
+            "certificate_hash": "da16c4fdcd94a1b7c8c06f69c358581c762138e1"
+          }
+        },
+        {
+          "client_id": "731835853514-quq6g99p5s29ov5ou0eb8b4pd24g1jra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMqfyRXYRD3_NPg65xpV6F2gWCZNAKTdw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731835853514-quq6g99p5s29ov5ou0eb8b4pd24g1jra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
